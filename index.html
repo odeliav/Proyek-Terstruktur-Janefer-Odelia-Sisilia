@@ -4,197 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Main Menu Glad2Glow</title>
-    <style>
-        .full{
-            width: 100%;
+  <style>
+         body{
+            height: 350dvh;
+            width: 100dvw;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+        header{
+            background-color: rgb(255, 221, 247);
+            display: flex;
+            flex-direction: row;
+           
+        }
+        header > .logo{
+            width: 50vw;
+            height: 80px;
+            padding: 35px 0px 0px 20px;
+        }
+        header > .halaman{
+            display: flex;
+            padding: 40px 10px 0px 20px;
+            gap: 20px;
+        }
+        main{
+            
+            display: flex;
+            flex-direction: column;
+            
+        
+
+        }
+        footer{
+            width: 100dvw;
+            height: 50vh;
+            background-color: rgb(255, 221, 247);
+
+        }
+        .gambar{
             height: 100vh;
-            background-color: rgb(228, 126, 231);
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .group{
-            width: 100%;
-            height: 90vh;
-            background-color: rgb(219, 109, 210);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            padding-left: 10px;
-            padding-right: 10px;
-            background-image: url(putih-abstrak.jpg);
-            background-repeat: no-repeat;
+            background-image: url('bc.webp');
             background-size: cover;
-            
+            color: rgb(194, 116, 174);
+            padding: 200px 0px 0px 200px;
+            font-size: 200%;
+            text-shadow: 2px 2px 5px;
+
+          
         }
-        header {
-            width: 100%;
-            height: 100px;
-            background-color:rgb(204, 98, 207);
+        main > .produk{
+            width: 50vw;
+            height: 50vh;
             display: flex;
             flex-direction: row;
-            justify-content: end;
-            align-items: center;
-            gap: 10px;
-            border-bottom: 1px solid rgb(221, 210, 210);
-            margin-right: 100px;
-        }
-        header > section {
-            flex: 1;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-           
-            font-size: 200%;  
-            margin-left: 20px;
+            gap: 50px;
+            padding: 20px 30px 20px 30px;
 
         }
-       
-        
-        .kotak1{
-            width: 100%;
-            height: 100px;
-            background-color:rgb(204, 98, 207);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items:center;
-            padding: 5px 5px 5px 5px;
-            color: white;
-        }
-        
-
-        .kotak2{
-            width: 100%;
-            height: 200%;
-            background-color:rgb(232, 196, 253);
+        main > .nama{
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items:center;
-            padding: 5px 5px 5px 5px;
-            opacity: 80%;
+            gap: 180px;
+            padding: 0px 30px 20px 90px;
 
         }
-        
-        .kotak3{
-            width: 100%;
-            height: 250px;
-            background-color:rgb(186, 171, 253);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items:center;
-            padding: 5px 5px 5px 5px;
-            opacity: 80%;
-
-        }
-        .kotak4 {
-            width: 100%;
-            height: 100px;
-            background-color:rgb(186, 171, 253);
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-           
-           
-        }
-        .kotak4 > section{
-            display: flex;
+        .kata{
+            width: 100dvw;
+            height: 50vh;
+            background-color: #ffdcf6;
+            color: rgb(253, 136, 253);
+            font-size: 300%;
             text-align: center;
-            margin: 10px 60px 10px 150px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 2px 2px 5px;
+           
         }
-
-       .h1,.p{
-        text-align: center;
-       }
-
-      .foto1{
-         width: 160px;
-            height: 160px;
-            background-color: rgb(249, 71, 255);
-            background-image: url(g2g.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: 10px solid white
+        main > .button{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(231, 136, 215);
+            border-radius: 20px;
+            margin-left: 45vw;
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: 100px;
             
-
-
-      }
-
-      .foto2{
-         width: 160px;
-            height: 160px;
-            background-color: rgb(238, 68, 253);
-            background-image: url(g2g1.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: 10px solid white
-            
-
-
-      }
-
-      .foto3{
-         width: 160px;
-            height: 160px;
-            background-color: rgb(255, 78, 255);
-            background-image: url(g2g3.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: 10px solid white
-      }
-
-      .foto4{
-         width: 160px;
-            height: 160px;
-            background-color: rgb(249, 67, 255);
-            background-image: url(g2g2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: 10px solid white
-      }
- 
+        }
     </style>
 </head>
 <body>
-    <header> 
-       <section><p><b>Glad2Glow</b></p></section> 
-       <a href="index.html">HOME</a>
-       <a href="aboutus.html">ABOUT US</a>
-        
+    <header>
+        <section class="logo">
+        <img src="logo.png" width="200px" alt="logo"></section>
+        <section class="halaman">
+        <a href="index.html">HOME</a>
+        <a href="https://">ABOUT US</a>
+        <a href="https://"></a>
+        <a href="https://"></a>
+        <a href="https://"></a>
+        </section>
+
     </header>
-<div class="full"> 
+    
+    <main>
+        <section class="gambar"> 
+        <h1>Natural & Safe for All!!</h1>
+
+        </section>
+        <section class="kata">
+            <h1>Let's Glow Together</h1>
+
+        </section>
+
+
+        <section class="produk">
+            <img src="g2g.png" alt="">
+        
+            <img src="g2g1.png" alt="">
+
+        
+            <img src="g2g3.png" alt="">
+
        
+            <img src="g2g2.png" alt="">
+            
+        </section>
+        <section class="nama">
+            <h4>Glad2Glow Lip Serum</h4>
+            <h4>Glad2Glow Buy 5 Get 6</h4>
+            <h4>Glad2Glow Body Serum</h4>
+            <h4>Glad2Glow Tone Up <br></br> Brightening Day Cream</h4>
+        </section>
+        <section class="button">
+            <a href="https://">See More</a>
 
-    <div class="kotak1">
-       <h1>SELAMAT DATANG</h1>
+        </section>
+    </main>
+    <footer>
+        <section>
 
-    </div>
-    <div class="group">
-        <div class="kotak2"><p style="color: white;">
-</p>
-        </div>
-        <div class="kotak3">
-            <div class="foto1"></div>
-            <div class="foto2"></div>
-            <div class="foto3"></div>
-            <div class="foto4"></div>
-        </div>
-    </div> 
-    </div>
-    <div class="kotak4">
-      <section><h4>Glad2Glow Lip Serum</h4></section>
-      <section><h4>Glad2Glow Buy 5 Get 6</h4></section>
-      <section><h4>Glad2Glow Body Serum</h4></section>
-      <section><h4>Glad2Glow Tone Up Brightening Day Cream</h4></section>
-
-
- 
- </body>
- </html>
+        </section>
+    </footer>
+    
+</body>
