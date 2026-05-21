@@ -1,112 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Main Menu Glad2Glow</title>
-  <style>
-         body{
+    <title>Main Menu Glad2Glow</title>
+    <meta name="description" content="Skincare Glad2Glow">
+    <meta name="keywords" content="g2g, Glad2Glow, skincare">
+    <meta name="author" content="Tugas Kelompok 5 Pemrograman Web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #modalpromo {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100dvw;
+            height: 100dvh;
+            background-color: rgb(28 28 28 / .7)
+        }
+
+        body {
             height: 350dvh;
             width: 90dvw;
             display: flex;
             flex-direction: column;
-            margin: 5px 20px 0px 70px;
-           
-            
+            margin: 5px 20px 0 70px
         }
-        header{
-            background-color: rgb(255, 221, 247);
+
+        header {
+            background-color: #ffddf7;
             display: flex;
             flex-direction: row;
             position: sticky;
             top: 0;
             z-index: 999;
-            box-shadow: 0px 2px 1px  rgb(192, 187, 187);
-
-           
+            box-shadow: 0 2px 1px #c0bbbb
         }
-        header > .logo{
+
+        header>.logo {
             width: 50vw;
             height: 80px;
-            padding: 35px 0px 0px 20px;
+            padding: 35px 0 0 20px
         }
-        header > .halaman{
-            display: flex;
-            padding: 40px 10px 0px 20px;
-            gap: 20px;
-            
-            
-            
-        }
-        a{
-            text-decoration: none;
-            color: rgb(95, 94, 99);
-            transition: color 0.5s;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+        header>.halaman {
+            display: flex;
+            padding: 40px 10px 0 20px;
+            gap: 20px
         }
-        a:hover{
-            color: rgb(10, 10, 10);
+
+        a {
+            text-decoration: none;
+            color: #5f5e63;
+            transition: color 0.5s;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
-        main{
+
+        a:hover {
+            color: #0a0a0a
+        }
+
+        main {
             width: 90dvw;
             display: flex;
             flex-direction: column;
-            background-color:#ffb7c5;
-            
-            
-        
+            background-color: #ffb7c5
+        }
 
-        }
-        .gambar{
+        .gambar {
             height: 100vh;
-            background-image: url('img/bc.webp');
+            background-image: url(img/bc.webp);
             background-size: cover;
-            color: rgb(10, 10, 10);
-            padding: 210px 0px 0px 180px;
+            color: #0a0a0a;
+            padding: 210px 0 0 180px;
             font-size: 200%;
-            text-shadow: 2px 2px 3px;
-            
-           
+            text-shadow: 2px 2px 3px
         }
-        
-        main > .p1{
-            height: 100vh;
+
+        main>.p1 {
+            height: 90vh;
             display: flex;
             flex-direction: row;
-            background-color: #fcedf8;
-
+            background-color: #fcedf8
         }
-        .p1 > .about{
+
+        .p1>.about {
             width: 50%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: rgb(36, 35, 35);
+            color: #242323;
             padding: 50px 20px 20px 100px;
             line-height: 1.7;
             font-size: 17px;
             animation: text 5s forwards;
             opacity: 0;
-            transform: translateX(-50px);
+            transform: translateX(-50px)
         }
-        @keyframes text{
-            to{
-            opacity: 1;
-            transform: translateX(0);
+
+        @keyframes text {
+            to {
+                opacity: 1;
+                transform: translateX(0)
             }
         }
-        .p1 > .kanan{
+
+        .p1>.kanan {
             width: 50%;
-            
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #fcedf8;
-            
-            
-           
+            background-color: #fcedf8
         }
-        .p1 > .kanan > section{
-            background-color: black;
+
+        .p1>.kanan>section {
+            background-color: #000;
             width: 400px;
             height: 267px;
             border-radius: 20px;
@@ -115,60 +123,62 @@
             background-repeat: no-repeat;
             opacity: 0;
             transform: translateX(20px);
-            animation: animasigambar alternate infinite 2s;
+            animation: animasigambar alternate infinite 2s
         }
+
         @keyframes animasigambar {
-        to {
-          opacity: 1;
-          transform: translateX(0);
+            to {
+                opacity: 1;
+                transform: translateX(0)
+            }
         }
-      }
-        .about > .button{
+
+        .about>.button {
             width: 200px;
             height: 40px;
             background-color: #e76881;
             border-radius: 20px;
             display: flex;
             align-items: center;
-            box-shadow: 2px 2px 10px;       
+            box-shadow: 2px 2px 10px;
             transition: width 2s
+        }
 
+        .about>.button:hover {
+            width: 300px
         }
-        .about > .button:hover{
-            width: 300px;
-        }
-         main > .kata{
+
+        main>.kata {
             width: 90dvw;
             height: 40vh;
             background-color: #ffb7c5;
             color: #e76881;
             font-size: 300%;
             text-align: center;
-            text-shadow: 2px 2px 10px  rgb(71, 70, 73);
+            text-shadow: 2px 2px 10px #474649;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            animation: warnatext alternate infinite 1s;
+            animation: warnatext alternate infinite 1s
+        }
 
-           
-        }
-        @keyframes warnatext{
+        @keyframes warnatext {
             0% {
-                color: #e76881;
+                color: #e76881
             }
+
             100% {
-                color: #ffffff;
+                color: #fff
             }
         }
-        main > .produk{
-           
+
+        main>.produk {
             padding: 0 50px 0 50px;
-            
             display: flex;
             flex-direction: row;
             background-color: #ffb7c5;
-            gap: 30px;
-            
+            gap: 30px
         }
-        .produk > section{
+
+        .produk>section {
             width: 22%;
             box-shadow: 2px 2px 10px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -180,110 +190,144 @@
             background-color: #fcedf8;
             transition: width 2s
         }
-        .produk > section:hover{
-            width: 300px;
+
+        .produk>section:hover {
+            width: 300px
         }
-        .produk > section > a{
-            color: rgb(93, 93, 204);
+
+        .produk>section>a {
+            color: #5d5dcc
         }
-         
-         
-        .button{
+
+        .button {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 200px;
-           
+            height: 200px
         }
-    
-        .button > section{
-           width: 150px;
+
+        .button>section {
+            width: 150px;
             height: 40px;
             background-color: #e76881;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 2px 2px 10px;       
+            box-shadow: 2px 2px 10px;
             transition: width 2s
-
-
-           
-            
-            
         }
-        .button > section:hover {
-            width: 200px;
-        
+
+        .button>section:hover {
+            width: 200px
         }
-        footer{
+
+        footer {
             width: 90dvw;
             height: 30vh;
-            background-color: rgb(107, 106, 106);
+            background-color: #6b6a6a;
             display: flex;
-            flex-direction: column;
+            flex-direction: column
         }
-        footer > .media{
+
+        footer>.media {
             display: flex;
             flex-direction: row;
-            background-color:  rgb(253, 253, 253);
+            background-color: #fdfdfd;
             padding: 20px 0 20px 50px;
             margin-bottom: 1px;
-            gap: 600px;
+            gap: 600px
         }
-        footer > .bawah{
+
+        footer>.bawah {
             height: 50vh;
-            background-color: rgb(253, 253, 253);
+            background-color: #fdfdfd;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 14px;
-            color: rgb(107, 106, 106);
+            color: #6b6a6a;
             padding-left: 50px;
             display: flex;
             flex-direction: row;
-            gap: 300px;
+            gap: 300px
         }
-        
     </style>
 </head>
+
 <body>
+    <div id="modalpromo">
+
+        <div style="
+            background-color: rgb(252, 225, 225);
+            margin: 15% auto;
+            padding: 30px;
+            width: 30dvw;
+            text-align: center;
+            border-radius: 15px;
+            position: relative;
+        ">
+            <span onclick=" closePromo()" style="
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        ">&times;</span>
+            <h2 style=" color:#e76881">DISKON 20% GLAD2GLOW!</h2>
+            <p>
+                Khusus pengguna baru, klaim kode <b>BARU20</b> sebelum hangus!
+            </p>
+            <button onclick=" closePromo()" style="
+        background:#e76881;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    ">
+                Ambil Diskon
+            </button>
+        </div>
+    </div>
     <header>
         <section class="logo">
-        <img src="img/logo.png" width="200px" alt="logo"></section>
+            <img src="img/logo.png" width="200px" alt="logo">
+        </section>
         <section class="halaman">
-        <a href="index.html">HOME</a>
-        <a href="aboutus.html">ABOUT US</a>
-        <a href="produk.html">PRODUCT</a>
-        <a href="https://"></a>
-        <a href="https://"></a>
+            <a href="index.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="produk.html">PRODUCT</a>
+            <a href="https://"></a>
+            <a href="https://"></a>
         </section>
 
     </header>
-    
-    
+
+
     <main>
-        <section class="gambar"> 
-        <h1>Natural & Safe for All!!</h1>
-       
+        <section class="gambar">
+            <h1>Natural & Safe for All!!</h1>
+
         </section>
 
 
         <section class="p1">
-        <section class="about">
-            <h1>ABOUT US</h1>
-            <p>Glad2Glow merupakan merek perawatan kulit (skincare) yang didirikan pada 
-               tahun 2022 di bawah naungan PT Suntone Wisdom Indonesia. Dikenal luas karena 
-               inovasi produknya yang berfokus pada perbaikan skin barrier, Glad2Glow 
-               menggabungkan bahan aktif dan komponen alami yang ramah untuk kulit sensitif, 
-               remaja, serta pemula. Dengan komitmen menghadirkan produk berkualitas tinggi 
-               namun tetap terjangkau, Glad2Glow kini menjadi salah satu brand kecantikan yang 
-               berkembang pesat dan populer di Indonesia serta Asia Tenggara.</p>
-            <section class="button">
-            <a href="aboutus.html">Learn More >></a></section>
-        </section>
-        
-        <section class="kanan">
-            <section> </section>
-        </section>
+            <section class="about">
+                <h1>ABOUT US</h1>
+                <p>Glad2Glow merupakan merek perawatan kulit (skincare) yang didirikan pada
+                    tahun 2022 di bawah naungan PT Suntone Wisdom Indonesia. Dikenal luas karena
+                    inovasi produknya yang berfokus pada perbaikan skin barrier, Glad2Glow
+                    menggabungkan bahan aktif dan komponen alami yang ramah untuk kulit sensitif,
+                    remaja, serta pemula. Dengan komitmen menghadirkan produk berkualitas tinggi
+                    namun tetap terjangkau, Glad2Glow kini menjadi salah satu brand kecantikan yang
+                    berkembang pesat dan populer di Indonesia serta Asia Tenggara.</p>
+                <section class="button">
+                    <a href="aboutus.html">Learn More >></a>
+                </section>
+            </section>
+
+            <section class="kanan">
+                <section> </section>
+            </section>
         </section>
 
         <section class="kata">
@@ -292,41 +336,55 @@
         </section>
 
         <section class="produk">
-           <section><img src="img/g2g.png" width="200vw" height="200vh" alt="produk1">
-                    <p>Glad2Glow Lip Serum</p> 
-                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/g2g.png" width="200vw" height="200vh" alt="produk1">
+                <p>Glad2Glow Lip Serum</p>
+                <a href="buy.html">Buy it</a>
+            </section>
             <section><img src="img/g2g1.png" width="200vw" height="200vh" alt="produk2">
-                    <p>Glad2Glow Buy 5 Get 6</p>
-                    <a href="buy.html">Buy it</a></section>
+                <p>Glad2Glow Buy 5 Get 6</p>
+                <a href="buy.html">Buy it</a>
+            </section>
             <section><img src="img/g2g3.png" width="200vw" height="200vh" alt="produk3">
-                    <p>Glad2Glow Body Serum</p>
-                    <a href="buy.html">Buy it</a></section>
+                <p>Glad2Glow Body Serum</p>
+                <a href="buy.html">Buy it</a>
+            </section>
             <section><img src="img/g2g2.png" width="200vw" height="200vh" alt="produk4">
-                    <p>Glad2Glow Tone Up <br>Brightening Day Cream</p>
-                    <a href="buy.html">Buy it</a></section>
-            
+                <p>Glad2Glow Tone Up <br>Brightening Day Cream</p>
+                <a href="buy.html">Buy it</a>
+            </section>
+
         </section>
 
 
-        
+
         <section class="button">
-        <section>
-            <a href="produk.html">See More >></a></section>
+            <section>
+                <a href="produk.html">See More >></a>
+            </section>
 
         </section>
     </main>
     <footer>
         <section class="media">
-        <img src="img/logo.png" width="200px" alt="logo">  
-        <img src="img/media.jpg" width="200px" alt="media sosial">
-        
-            
+            <img src="img/logo.png" width="200px" alt="logo">
+            <img src="img/media.jpg" width="200px" alt="media sosial">
+
+
         </section>
         <section class="bawah">
-        <p>ABOUT US | CONTACT | COMMERCIAL | NEWSLETTER | TERMS OF SERVICE |</p>
-        <p>Gedung Green Office Park 9, Lantai 1, Wing A, Zona 1, Jalan Grand Boulevard,<br>
-           BSD Green Office Park, BSD City, Tangerang, Banten 15435</p>
+            <p>ABOUT US | CONTACT | COMMERCIAL | NEWSLETTER | TERMS OF SERVICE |</p>
+            <p>Gedung Green Office Park 9, Lantai 1, Wing A, Zona 1, Jalan Grand Boulevard,<br>
+                BSD Green Office Park, BSD City, Tangerang, Banten 15435</p>
         </section>
     </footer>
-    
+
 </body>
+<script>
+    setTimeout(() => { 
+        document.getElementById("modalpromo").style.display = "block" 
+        }, 5000); 
+        function closePromo() { 
+        document.getElementById("modalpromo").style.display = "none" }
+</script>
+
+</html>
