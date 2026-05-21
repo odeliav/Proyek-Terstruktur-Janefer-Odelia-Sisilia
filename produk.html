@@ -20,6 +20,9 @@
             position: sticky;
             top: 0;
             z-index: 999;
+            box-shadow: 0px 2px 1px  rgb(192, 187, 187);
+
+           
         }
         header > .logo{
             width: 50vw;
@@ -30,18 +33,25 @@
             display: flex;
             padding: 40px 10px 0px 20px;
             gap: 20px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-           
+            
+            
+            
         }
         a{
             text-decoration: none;
-            color: rgb(4, 1, 14);
+            color: rgb(95, 94, 99);
+            transition: color 0.5s;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        a:hover{
+            color: rgb(10, 10, 10);
         }
          main{
             width: 90dvw;
             display: flex;
             flex-direction: column;
-            background-color: rgb(255, 235, 250);
+            background-color:#ffb7c5;
             
         
 
@@ -51,31 +61,71 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 1.5;
         }
-        main > .baris1{
+        main > .baris{
             display: flex;
             flex-direction: row;
             gap: 40px;
             padding: 20px 20px 0px 30px;
+            
         }
-         main > .nama1{
+        main > .baris > section{
+            width: 17%;
+            height: 300px;
+            box-shadow: 2px 2px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 0 40px 0;
+            background-color: #fcedf8;
+            transition: width 2s
+            
+        }
+        .baris > section:hover{
+            width: 200px;
+        }
+        .baris > section > a{
+            color: rgb(93, 93, 204);
+
+        }
+         
+       
+
+
+
+
+
+
+
+        footer{
+            width: 90dvw;
+            height: 30vh;
+            background-color: rgb(107, 106, 106);
+            display: flex;
+            flex-direction: column;
+        }
+        footer > .media{
             display: flex;
             flex-direction: row;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            gap: 60px;
-            padding: 10px 20px 0px 60px;
-            text-align: center;
-            
-
+            background-color:  rgb(253, 253, 253);
+            padding: 20px 0 20px 50px;
+            margin-bottom: 1px;
+            gap: 600px;
         }
-        main > .btn{
+        footer > .bawah{
+            height: 50vh;
+            background-color: rgb(253, 253, 253);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+            color: rgb(107, 106, 106);
+            padding-left: 50px;
             display: flex;
-            gap: 200px;
-            padding: 0px 0px 20px 110px;
+            flex-direction: row;
+            gap: 300px;
         }
-        .btn > a{
-            color: rgb(39, 132, 175);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+        .belumtau{
+            height: 200px;
         }
     </style>
 </head>
@@ -100,53 +150,60 @@
                dan memperkuat skin barrier Anda agar tampak lebih segar dan glowing. Untuk kulit 
                terbaik Anda, mulailah langkah perawatan esensial dari kami sekarang!</p>
         </section>
-        <section class="baris1">
-            <img src="img/p1.jpg" width="200vw" height="200vh" alt="produk1">
-            <img src="img/p10.jpg" width="200vw" height="200vh" alt="produk2">
-            <img src="img/p7.png" width="200vw" height="200vh" alt="produk3">
-            <img src="img/p4.jpg" width="200vw" height="200vh" alt="produk4">
-            <img src="img/p6.jpg" width="200vw" height="200vh" alt="produk5">
+        <section class="baris">
+            <section><img src="img/p1.jpg" width="200vw" height="200vh" alt="produk1">
+                    <p>Glad2Glow Double Bright Day Cream</p>
+                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/p10.jpg" width="200vw" height="200vh" alt="produk2">
+                    <p>Glad2Glow Pomegranate 5% Niacinamide Brightening Moisturizer</p>
+                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/p7.png" width="200vw" height="200vh" alt="produk3">
+                    <p>Glad2Glow Creamy Berry Overnight Bright Body Serum</p>
+                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/p4.jpg" width="200vw" height="200vh" alt="produk4">
+                    <p>Glad2Glow Niacinamide Facial Wash</p>
+                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/p6.jpg" width="200vw" height="200vh" alt="produk5">
+                    <p>Glad2Glow Creamy Berry Overnight Bright Body Serum</p>        
+                    <a href="buy.html">Buy it</a></section>
             
         </section>
-        <section class="nama1">
-            <p>Glad2Glow Double Bright Day Cream</p>
-            <p>Glad2Glow Pomegranate<br>5% Niacinamide Brightening Moisturizer</p>
-            <p>Glad2Glow Creamy Berry Overnight Bright Body <br>Serum</p>
-            <p>Glad2Glow Niacinamide Facial Wash</p>
-            <p>Glad2Glow Creamy Berry Overnight Bright Body Serum</p>
-        </section>
-        <section class="btn">
-            <a href="buy.html">Buy it</a>
-            <a href="buy.html">Buy it</a>
-            <a href="buy.html">Buy it</a>
-            <a href="buy.html">Buy it</a>
-            <a href="buy.html">Buy it</a>
-        </section>
-         <section class="baris1">
-            <img src="img/p2.jpg" width="200vw" height="200vh" alt="produk1">
-            <img src="img/p3.jpg" width="200vw" height="200vh" alt="produk2">
-            <img src="img/p5.jpg" width="200vw" height="200vh" alt="produk3">
-            <img src="img/p8.jpg" width="200vw" height="200vh" alt="produk4">
-            <img src="img/p9.jpg" width="200vw" height="200vh" alt="produk5">
+        
+         <section class="baris">
+            <section><img src="img/p2.jpg" width="200vw" height="200vh" alt="produk1">
+                    <p>Glad2Glow Double Bright Day Cream</p>
+                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/p3.jpg" width="200vw" height="200vh" alt="produk2">
+                    <p>Glad2Glow AHA BHA PHA Intensive Peeling <br>Solution</p>
+                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/p5.jpg" width="200vw" height="200vh" alt="produk3">
+                    <p>Glad2Glow Tremella <br>Panthenol Sensitive Care Micellar Water</p>
+                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/p8.jpg" width="200vw" height="200vh" alt="produk4">
+                    <p>Glad2Glow Mugwort Salicylic Acid Acne Clay Stick</p>
+                    <a href="buy.html">Buy it</a></section>
+            <section><img src="img/p9.jpg" width="200vw" height="200vh" alt="produk5">
+                    <p>Glad2Glow Berry Peptide Brightening Eye Cream</p>
+                    <a href="buy.html">Buy it</a></section>
             
         </section>
-        <section class="nama1">
-            <p>Glad2Glow Double Bright Day Cream</p>
-            <p>Glad2Glow AHA BHA PHA Intensive Peeling <br>Solution</p>
-            <p>Glad2Glow Tremella <br>Panthenol Sensitive Care Micellar Water</p>
-            <p>Glad2Glow Mugwort Salicylic Acid Acne Clay Stick</p>
-            <p>Glad2Glow Berry Peptide Brightening Eye Cream</p>
+        <section class="belumtau">
+            <p>belum tau</p>
         </section>
-        <section class="btn">
-            <a href="buy.html">Buy it</a>
-            <a href="buy.html">Buy it</a>
-            <a href="buy.html">Buy it</a>
-            <a href="buy.html">Buy it</a>
-            <a href="buy.html">Buy it</a>
-        </section>
+        
     </main>
     <footer>
-
+        <section class="media">
+        <img src="img/logo.png" width="200px" alt="logo">  
+        <img src="img/media.jpg" width="200px" alt="media sosial">
+        
+            
+        </section>
+        <section class="bawah">
+        <p>ABOUT US | CONTACT | COMMERCIAL | NEWSLETTER | TERMS OF SERVICE |</p>
+        <p>Gedung Green Office Park 9, Lantai 1, Wing A, Zona 1, Jalan Grand Boulevard,<br>
+           BSD Green Office Park, BSD City, Tangerang, Banten 15435</p>
+        </section>
     </footer>
     
 </body>
