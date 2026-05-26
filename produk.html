@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,11 @@
     <meta name="keywords" content="g2g, Glad2Glow, skincare, produk Glad2Glow">
     <meta name="author" content="Tugas Kelompok 5 Pemrograman Web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" as="image" href="img/Pic1.jpg">
     <style>
         body {
-            height: 350dvh;
+            min-height: 100vh;
             width: 90dvw;
             display: flex;
             flex-direction: column;
@@ -200,7 +202,7 @@
 .promo-center h1 {
     font-size: 90px;
     margin: 0;
-    text-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    text-shadow: 3px 3px 10px;
 }
 
 .promo-center p {
@@ -247,9 +249,9 @@
             <img src="img/logo.png" width="200px" alt="logo">
         </section>
         <section class="halaman">
-            <a href="index.html">HOME</a>
-            <a href="https://">ABOUT US</a>
-            <a href="produk.html">PRODUCT</a>
+            <a href="index.html" aria-label="halaman utama">HOME</a>
+            <a href="aboutus.html" aria-label="About G2G">ABOUT US"></a>
+            <a href="produk.html" aria-label="produk">PRODUCT</a>
             <a href="https://"></a>
             <a href="https://"></a>
         </section>
@@ -264,49 +266,49 @@
                 terbaik Anda, mulailah langkah perawatan esensial dari kami sekarang!</p>
         </section>
         <section class="baris">
-            <section><img src="img/p1.jpg" width="200vw" height="200vh" alt="produk1">
+            <section><img src="img/p1.jpg" loading="lazy" width="200vw" height="200vh" alt="produk1">
                 <p>Glad2Glow Double Bright <br> Day Cream</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Day Cream">Buy it</a>
             </section>
-            <section><img src="img/p10.jpg" width="200vw" height="200vh" alt="produk2">
+            <section><img src="img/p10.jpg" loading="lazy" width="200vw" height="200vh" alt="produk2">
                 <p>Glad2Glow Pomegranate 5% <br>Niacinamide Brightening <br>Moisturizer</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Moisturizer">Buy it</a>
             </section>
-            <section><img src="img/p7.png" width="200vw" height="200vh" alt="produk3">
+            <section><img src="img/p7.png" loading="lazy" width="200vw" height="200vh" alt="produk3">
                 <p>Glad2Glow Creamy Berry <br>Overnight Bright Body Serum</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Body Serum">Buy it</a>
             </section>
-            <section><img src="img/p4.jpg" width="200vw" height="200vh" alt="produk4">
+            <section><img src="img/p4.jpg" loading="lazy" width="200vw" height="200vh" alt="produk4">
                 <p>Glad2Glow Niacinamide <br>Facial Wash</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Facial Wash">Buy it</a>
             </section>
-            <section><img src="img/p6.jpg" width="200vw" height="200vh" alt="produk5">
+            <section><img src="img/p6.jpg" loading="lazy" width="200vw" height="200vh" alt="produk5">
                 <p>Glad2Glow Creamy Berry <br>Overnight Bright Body Serum</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Body Serum">Buy it</a>
             </section>
 
         </section>
 
         <section class="baris">
-            <section><img src="img/p2.jpg" width="200vw" height="200vh" alt="produk1">
+            <section><img src="img/p2.jpg" loading="lazy" width="200vw" height="200vh" alt="produk1">
                 <p>Glad2Glow Double Bright <br> Day Cream</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Day Cream">Buy it</a>
             </section>
-            <section><img src="img/p3.jpg" width="200vw" height="200vh" alt="produk2">
+            <section><img src="img/p3.jpg" loading="lazy" width="200vw" height="200vh" alt="produk2">
                 <p>Glad2Glow AHA BHA PHA <br> Intensive Peeling Solution</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Peeling Solution">Buy it</a>
             </section>
-            <section><img src="img/p5.jpg" width="200vw" height="200vh" alt="produk3">
+            <section><img src="img/p5.jpg" loading="lazy" width="200vw" height="200vh" alt="produk3">
                 <p>Glad2Glow Tremella Panthenol <br> Sensitive Care Micellar Water</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Micellar Water">Buy it</a>
             </section>
-            <section><img src="img/p8.jpg" width="200vw" height="200vh" alt="produk4">
+            <section><img src="img/p8.jpg" loading="lazy" width="200vw" height="200vh" alt="produk4">
                 <p>Glad2Glow Mugwort Salicylic <br>Acid Acne Clay Stick</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Acne Clay Stick">Buy it</a>
             </section>
-            <section><img src="img/p9.jpg" width="200vw" height="200vh" alt="produk5">
+            <section><img src="img/p9.jpg" loading="lazy" width="200vw" height="200vh" alt="produk5">
                 <p>Glad2Glow Berry Peptide <br>Brightening Eye Cream</p>
-                <a href="buy.html">Buy it</a>
+                <a href="buy.html" aria-label="Beli Eye Cream">Buy it</a>
             </section>
 
         </section>
@@ -338,8 +340,8 @@
     </main>
     <footer>
         <section class="media">
-            <img src="img/logo.png" width="200px" height="50px" alt="logo">
-            <img src="img/media.jpg" width="200px" alt="media sosial">
+            <img src="img/logo.png" loading="lazy" width="200px" height="50px" alt="logo">
+            <img src="img/media.jpg" loading="lazy" width="200px" alt="media sosial">
 
 
         </section>
