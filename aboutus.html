@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <meta name="description" content="About Skincare Glad2Glow">
+    <meta name="keywords" content="about us, about g2g, about Glad2Glow, skincare glad2glow, tentang glad2glow">
+    <meta name="author" content="Tugas Kelompok 5 Pemrograman Web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body{
+        body {
             min-height: 100vh;
             width: 90dvw;
             display: flex;
             flex-direction: column;
             margin: 5px 20px 0px 70px;
-            
+
         }
-        header{
-             background-color: rgb(255, 221, 247);
+
+        header {
+            background-color: rgb(255, 221, 247);
             display: flex;
             flex-direction: row;
         }
-        header > .logo{
+
+        header>.logo {
             width: 50vw;
             height: 80px;
             padding: 35px 0px 0px 20px;
         }
-        header > .halaman{
+
+        header>.halaman {
             display: flex;
             padding: 40px 10px 0px 20px;
             gap: 20px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-           
+
         }
-        a{
+
+        a {
             text-decoration: none;
             color: rgb(4, 1, 14);
         }
+
+        main {
+            width: 90dvw;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff
+        }
+
         main>.p1 {
             height: 90vh;
             display: flex;
@@ -77,6 +94,82 @@
             transform: translateX(20px);
         }
 
+        .services {
+            width: 90dvw;
+            background: #fff7fa;
+            padding: 80px 40px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .services h1 {
+            color: #e76881;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .services>p {
+            font-size: 20px;
+            color: #000000;
+            margin-bottom: 50px;
+        }
+
+        .container {
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .card {
+            width: 250px;
+            padding: 30px;
+            transition: .4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pink {
+            background: #ffe9f0;
+        }
+
+        .white {
+            background: white;
+        }
+
+        .card h2 {
+            font-size: 70px;
+            color: #e76881;
+            margin: 0;
+        }
+
+        .card hr {
+            width: 150px;
+            border: 1px dashed #e76881;
+        }
+
+        .card h3 {
+            color: #e76881;
+            font-size: 32px;
+            min-height: 80px;
+        }
+
+        .card img {
+            width: 170px;
+            height: 170px;
+            object-fit: contain;
+            margin: 20px 0;
+        }
+
+        .card p {
+            line-height: 1.8;
+            text-align: center;
+            color: #000000;
+        }
+
+
 
         footer {
             width: 90dvw;
@@ -111,25 +204,27 @@
             flex-direction: row;
             gap: 300px
         }
-    
-</style>
+    </style>
 </head>
+
 <body>
     <header>
-         <section class="logo">
+        <section class="logo">
             <img src="img/logo.png" width="200px" alt="logo">
         </section>
         <section class="halaman">
             <a href="index.html" aria-label="halaman utama">HOME</a>
             <a href="aboutus.html" aria-label="About G2G">ABOUT US</a>
             <a href="produk.html" aria-label="produk">PRODUCT</a>
-            <a href="https://"></a>
-            <a href="https://"></a>
+            <a href="services.html" aria-label="service">SERVICES</a>
+            <a href="contact.html" aria-label="kontak kami">CONTACT</a>
         </section>
 
     </header>
     <main>
         <section class="p1">
+
+
             <section class="kanan">
                 <section> </section>
             </section>
@@ -143,16 +238,95 @@
                     namun tetap terjangkau, Glad2Glow kini menjadi salah satu brand kecantikan yang
                     berkembang pesat dan populer di Indonesia serta Asia Tenggara.</p>
                 <br>
-            </section>
-        </section>
-        <section>
-             <h1>Apakah Glad2Glow Sudah BPOM dan Halal?</h1>
+                <h1>Apakah Glad2Glow Sudah BPOM dan Halal?</h1>
                 <li> Terdaftar BPOM: Semua produk Glad2Glow yang beredar secara resmi telah melewati uji klinis dan
                     memiliki nomor registrasi BPOM.
                     Anda bisa mengeceknya langsung di situs resmi cekbpom.pom.go.id dengan mengetikkan nama brand. </li>
                 <li> Halal: Sebagian besar produk unggulannya juga
                     sudah mengantongi sertifikat Halal, menjadikannya aman digunakan oleh konsumen Muslim di Indonesia.
                 </li> <br><br>
+
+                <section class="button">
+                    <a href="aboutus.html" aria-label="About G2G">Learn More >></a>
+                </section>
+            </section>
+        </section>
+        <section class="services">
+            <h1>✨ Solusi Perawatan Kulit Glad2Glow ✨</h1>
+            <p>
+                Temukan rangkaian produk terbaik untuk membantu kulit tampak sehat,
+                cerah, dan glowing setiap hari.
+            </p>
+
+            <section class="container">
+
+                <article class="card pink">
+                    <h2>01</h2>
+                    <hr>
+                    <h3>PEMBERSIH WAJAH</h3>
+
+                    <img src="img/fw01.png" loading="lazy" alt="Facial Wash">
+
+                    <p>
+                        Membersihkan debu, minyak berlebih, dan sisa makeup secara lembut
+                        tanpa membuat kulit terasa kering.
+                    </p>
+                </article>
+
+                <article class="card white">
+                    <h2>02</h2>
+                    <hr>
+                    <h3>PELEMBAP WAJAH</h3>
+
+                    <img src="img/mois02.png" loading="lazy" alt="Moisturizer">
+
+                    <p>
+                        Membantu menjaga kelembapan kulit sepanjang hari dan memperkuat
+                        skin barrier.
+                    </p>
+                </article>
+
+                <article class="card pink">
+                    <h2>03</h2>
+                    <hr>
+                    <h3>PERAWATAN JERAWAT</h3>
+
+                    <img src="img/serum03.png" loading="lazy" alt="Acne Care">
+
+                    <p>
+                        Membantu mengurangi kemerahan, mengontrol minyak berlebih,
+                        dan merawat kulit berjerawat.
+                    </p>
+                </article>
+
+                <article class="card white">
+                    <h2>04</h2>
+                    <hr>
+                    <h3>MENCERAHKAN KULIT</h3>
+
+                    <img src="img/serum04.png" loading="lazy" alt="Brightening Care">
+
+                    <p>
+                        Membantu menyamarkan noda hitam dan membuat kulit tampak
+                        lebih cerah bercahaya.
+                    </p>
+                </article>
+
+                <article class="card pink">
+                    <h2>05</h2>
+                    <hr>
+                    <h3>PERAWATAN BIBIR</h3>
+
+                    <img src="img/lipserum05.png" loading="lazy" alt="Lip Care">
+
+                    <p>
+                        Menjaga bibir tetap lembap, lembut, dan tampak merona alami.
+                    </p>
+
+
+                </article>
+
+            </section>
         </section>
 
     </main>
@@ -171,4 +345,5 @@
 
     </footer>
 </body>
+
 </html>
