@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tone Up</title>
+    <style>
+        body {
+            min-height: 100vh;
+            width: 90dvw;
+            display: flex;
+            flex-direction: column;
+            margin: 5px 20px 0 70px
+        }
+
+        header {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 1px #c0bbbb
+        }
+
+        header>.logo {
+            width: 50vw;
+            height: 80px;
+            padding: 35px 0 0 20px
+        }
+
+        header>.halaman {
+            display: flex;
+            padding: 40px 10px 0 20px;
+            gap: 20px
+        }
+
+        a {
+            text-decoration: none;
+            color: #5f5e63;
+            transition: color 0.5s;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        a:hover {
+            color: #0a0a0a
+        }
+
+
+        main {
+            width: 90dvw;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffb7c5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            margin: 30px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+        }
+
+        .produk-img {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .info-produk {
+            flex: 1;
+        }
+
+
+
+        .info-produk h1 {
+            margin-bottom: 15px;
+            color: #e76881;
+        }
+
+        .rating {
+            color: gold;
+            margin-bottom: 15px;
+        }
+
+        .harga {
+            font-size: 35px;
+            font-weight: bold;
+            color: #ff5b8a;
+            margin-bottom: 20px;
+        }
+
+        .deskripsi {
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .bpom {
+            margin-bottom: 25px;
+        }
+
+        .bpom>p {
+            margin-bottom: 8px;
+        }
+
+        .jumlah {
+            margin-bottom: 25px;
+        }
+
+        .jumlah>input {
+            width: 70px;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .total {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: flex;
+            gap: 15px;
+        }
+
+        .beli-btn,
+        .keranjang {
+            padding: 14px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .beli-btn {
+            background-color: #ff7fa3;
+            color: white;
+        }
+
+        .beli-btn:hover {
+            background-color: #ff5b8a;
+        }
+
+        .keranjang {
+            background-color: white;
+            border: 2px solid #ff7fa3;
+            color: #ff7fa3;
+        }
+
+        .keranjang:hover {
+            background-color: #ff7fa3;
+            color: white;
+        }
+
+
+
+
+
+        footer {
+            width: 90dvw;
+            height: 30vh;
+            background-color: #6b6a6a;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+
+        footer>.media {
+            display: flex;
+            flex-direction: row;
+            background-color: #ffffff;
+            padding: 30px 0 10px 50px;
+            margin-bottom: 1px;
+            gap: 600px
+        }
+
+        footer>.bawah {
+            height: 50vh;
+            background-color: #fdfdfd;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+            color: #6b6a6a;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 300px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="../img/logo.png" width="200px" alt="logo">
+        </section>
+        <section class="halaman">
+            <a href="../index.html" aria-label="halaman utama">HOME</a>
+            <a href="../aboutus/index.html" aria-label="About G2G">ABOUT US</a>
+            <a href="../produk/index.html" aria-label="produk">PRODUCT</a>
+            <a href="../service/index.html" aria-label="service">SERVICES</a>
+        </section>
+
+    </header>
+    <main>
+
+        <section class="container">
+
+            <section class="produk-img">
+                <img src="../img/g2g2.png" loading="lazy" width="400vw" height="400vh" alt="Tone Up">
+
+            </section>
+
+            <section class="info-produk">
+                <h1>Glad2Glow Tone Up Brightening Day Cream</h1>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐ (443 Reviews)
+                </div>
+
+                <p class="harga">Rp56.000</p>
+
+                <p class="deskripsi">
+                    Glad2Glow Tone Up Brightening Day Cream membantu membuat kulit tampak
+                    lebih cerah secara instan sekaligus menjaga kelembapan sepanjang hari.
+                    Dengan tekstur ringan yang mudah menyerap, krim ini membantu meratakan
+                    warna kulit, memberikan efek glowing alami, dan membuat wajah tampak
+                    lebih segar sebelum penggunaan makeup.
+                </p>
+
+                <p class="bpom">
+                <p>✓ BPOM Terdaftar</p>
+                <p>✓ Halal Certified</p>
+                <p>✓ Efek Tone Up Instan</p>
+                <p>✓ Membantu mencerahkan dan meratakan warna kulit</p>
+                <p>✓ Tekstur ringan dan tidak lengket</p>
+                <p>✓ Cocok digunakan sebelum makeup</p>
+                <p>✓ Cocok untuk semua jenis kulit</p>
+                </p>
+
+                <div class="jumlah">
+                    <label for="qty"><b>Jumlah:</b></label>
+                    <input type="number" id="qty" value="1" min="1">
+                </div>
+
+                <div class="total">
+                    Total: Rp56.000
+                </div>
+
+                <div class="button">
+                    <button class="beli-btn">
+                        Beli Sekarang
+                    </button>
+
+                    <button class="keranjang">
+                        + Keranjang
+                    </button>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+    <footer>
+
+        <section class="media">
+            <img src="../img/logo.png" loading="lazy" width="200px" height="50px" alt="logo">
+            <img src="../img/media.jpg" loading="lazy" width="200px" alt="media sosial">
+
+
+        </section>
+        <section class="bawah">
+            <p>ABOUT US | CONTACT | COMMERCIAL | NEWSLETTER | TERMS OF SERVICE |</p>
+            <p>Gedung Green Office Park 9, Lantai 1, Wing A, Zona 1, Jalan Grand Boulevard,<br>
+                BSD Green Office Park, BSD City, Tangerang, Banten 15435</p>
+        </section>
+    </footer>
+</body>
+
+</html>

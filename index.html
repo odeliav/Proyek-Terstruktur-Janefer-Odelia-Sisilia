@@ -13,70 +13,7 @@
     <link rel="preload" as="image" href="img/Pic1.jpg">
 
     <style>
-        .ingredient {
-            padding: 80px 50px;
-            background-color: #fee7ee;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        .ingredient h1 {
-            margin-bottom: 40px;
-            color: #e76881;
-        }
-
-        .ingredient-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 200px;
-            height: 120px;
-            perspective: 1000px;
-        }
-
-        .inner {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-        }
-
-
-        .card:hover .inner {
-            transform: rotateY(180deg);
-        }
-
-
-        .front,
-        .back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backface-visibility: hidden;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            font-weight: bold;
-        }
-
-
-        .front {
-            background-color: #fcedf8;
-        }
-
-
-        .back {
-            background-color: #ffb7c5;
-            transform: rotateY(180deg);
-        }
-
+        
         .cherry-container {
             position: fixed;
             top: 0;
@@ -328,11 +265,13 @@
         }
 
         main>.produk {
+            font-family: Arial, Helvetica, sans-serif;
             padding: 0 100px 0 200px;
             display: flex;
             flex-direction: row;
             background-color: #ffffff;
             gap: 40px
+            
         }
 
         .produk>section {
@@ -397,6 +336,70 @@
 
         .button>section:hover {
             width: 200px
+        }
+
+        .bc {
+            padding: 80px 50px;
+            background-color: #fee7ee;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .bc h1 {
+            margin-bottom: 40px;
+            color: #e76881;
+        }
+
+        .bc-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            height: 120px;
+            perspective: 1000px;
+        }
+
+        .inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+
+        .card:hover .inner {
+            transform: rotateY(180deg);
+        }
+
+
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backface-visibility: hidden;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+
+
+        .front {
+            background-color: #fcedf8;
+        }
+
+
+        .back {
+            background-color: #ffb7c5;
+            transform: rotateY(180deg);
         }
 
         footer {
@@ -539,16 +542,16 @@
                 <a href="produk/beli-lipserum.html" aria-label="Beli Lip Serum">Buy it</a>
             </section>
             <section><img src="img/g2g1.png" loading="lazy" width="200vw" height="200vh" alt="1 set">
-                <p>Glad2Glow Buy 5 Get 6</p>
-                <a href="" aria-label="Beli 1 set">Buy it</a>
+                <p>Facial Wash Glad2Glow Milk Amino Acid</p>
+                <a href="produk/beli-facialwash.html" aria-label="Beli Facial Wash">Buy it</a>
             </section>
             <section><img src="img/g2g3.png" loading="lazy" width="200vw" height="200vh" alt="body serum">
                 <p>Glad2Glow Body Serum</p>
-                <a href="" aria-label="Beli Body Serum">Buy it</a>
+                <a href="produk/beli-bodyserum.html" aria-label="Beli Body Serum">Buy it</a>
             </section>
             <section><img src="img/g2g2.png" loading="lazy" width="200vw" height="200vh" alt="tone up">
                 <p>Glad2Glow Tone Up <br>Brightening Day Cream</p>
-                <a href="" aria-label="Beli Tone Up">Buy it</a>
+                <a href="produk/beli-toneup.html" aria-label="Beli Tone Up">Buy it</a>
             </section>
 
         </section>
@@ -557,14 +560,14 @@
 
         <section class="button">
             <section>
-                <a href="produk.html" aria-label="produk lainnya">See More >></a>
+                <a href="produk/index.html" aria-label="produk lainnya">See More >></a>
             </section>
 
         </section>
-        <section class="ingredient">
+        <section class="bc">
             <h1>✨ What’s Inside Glad2Glow?</h1>
 
-            <div class="ingredient-container">
+            <div class="bc-container">
 
                 <div class="card">
                     <div class="inner">
