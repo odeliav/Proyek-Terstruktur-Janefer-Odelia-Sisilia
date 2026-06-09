@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preload" as="image" href="img/Pic1.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
-        
-        .cherry-container {
+        .cherry {
             position: fixed;
             top: 0;
             left: 0;
@@ -22,85 +23,84 @@
             height: 100%;
             pointer-events: none;
             overflow: hidden;
-            z-index: 1;
+            z-index: 1
         }
 
-        .cherry-container span {
+        .cherry span {
             position: absolute;
             top: -50px;
             font-size: 28px;
-            opacity: 0.7;
-            animation: jatuh linear infinite 30s;
+            opacity: .7;
+            animation: jatuh linear infinite 30s
         }
 
-
-        .cherry-container span:nth-child(1) {
+        .cherry span:nth-child(1) {
             left: 10%;
             animation-duration: 15s;
-            animation-delay: 0s;
+            animation-delay: 0s
         }
 
-        .cherry-container span:nth-child(2) {
+        .cherry span:nth-child(2) {
             left: 25%;
             animation-duration: 18s;
-            animation-delay: 2s;
+            animation-delay: 2s
         }
 
-        .cherry-container span:nth-child(3) {
+        .cherry span:nth-child(3) {
             left: 40%;
             animation-duration: 14s;
-            animation-delay: 4s;
+            animation-delay: 4s
         }
 
-        .cherry-container span:nth-child(4) {
+        .cherry span:nth-child(4) {
             left: 55%;
             animation-duration: 20s;
-            animation-delay: 1s;
+            animation-delay: 1s
         }
 
-        .cherry-container span:nth-child(5) {
+        .cherry span:nth-child(5) {
             left: 70%;
             animation-duration: 17s;
-            animation-delay: 3s;
+            animation-delay: 3s
         }
 
-        .cherry-container span:nth-child(6) {
+        .cherry span:nth-child(6) {
             left: 85%;
             animation-duration: 16s;
-            animation-delay: 5s;
+            animation-delay: 5s
         }
 
-        .cherry-container span:nth-child(7) {
+        .cherry span:nth-child(7) {
             left: 95%;
             animation-duration: 19s;
-            animation-delay: 2s;
+            animation-delay: 2s
         }
 
         @keyframes jatuh {
             0% {
                 transform: translate(0, -50px) rotate(0deg);
-                opacity: 0;
+                opacity: 0
             }
 
             20% {
-                opacity: 0.8;
+                opacity: .8
             }
 
             25% {
-                transform: translate(20px, 25vh) rotate(90deg);
+                transform: translate(20px, 25vh) rotate(90deg)
             }
 
             50% {
-                transform: translate(-25px, 50vh) rotate(180deg);
+                transform: translate(-25px, 50vh) rotate(180deg)
             }
 
             75% {
-                transform: translate(30px, 75vh) rotate(270deg);
+                transform: translate(30px, 75vh) rotate(270deg)
             }
 
             100% {
                 transform: translate(-20px, 100vh) rotate(360deg);
-                opacity: 0.5;
+                opacity: .5
             }
         }
 
@@ -125,7 +125,7 @@
 
         header {
             height: 100px;
-            background-color: white;
+            background-color: #fff;
             display: flex;
             flex-direction: row;
             position: sticky;
@@ -161,21 +161,17 @@
             width: 90dvw;
             display: flex;
             flex-direction: column;
-            background-color: #ffffff
+            background-color: #fff
         }
-
 
         .gambar {
             width: 90dvw;
-            height: 120dvh;
-
+            height: 120dvh
         }
 
         .gambar img {
             width: 100%;
-            height: 100%;
-
-
+            height: 100%
         }
 
         main>.p1 {
@@ -192,7 +188,7 @@
             padding: 50px 20px 20px 100px;
             line-height: 1.7;
             font-size: 17px;
-            text-align: justify;
+            text-align: justify
         }
 
         @keyframes text {
@@ -218,7 +214,7 @@
             background-image: url(img/pinky.jfif);
             background-size: contain;
             background-repeat: no-repeat;
-            transform: translateX(20px);
+            transform: translateX(20px)
         }
 
         @keyframes animasigambar {
@@ -246,7 +242,7 @@
         main>.kata {
             width: 90dvw;
             height: 30vh;
-            background-color: #ffffff;
+            background-color: #fff;
             color: pink;
             font-size: 300%;
             text-align: center;
@@ -271,10 +267,8 @@
             display: flex;
             text-align: center;
             flex-direction: row;
-            background-color: #ffffff;
+            background-color: #fff;
             gap: 40px
-
-            
         }
 
         .produk>section {
@@ -288,35 +282,33 @@
             padding: 40px 0;
             background-color: #fcedf8;
             transition: transform 0.5s ease;
-            border-radius: 20px;
+            border-radius: 20px
         }
-
 
         .produk>section:hover {
             transform: scale(1.1);
             transform: scale(1.1);
-            box-shadow: 5px 5px 20px gray;
+            box-shadow: 5px 5px 20px gray
         }
 
         .produk>section>a {
             text-decoration: none;
             background: linear-gradient(to right, #ff9eb5, #ffc7d7);
-            color: white;
+            color: #fff;
             padding: 10px 22px;
             border-radius: 30px;
-            font-weight: bold;
+            font-weight: 700;
             margin-top: 10px;
-            box-shadow: 2px 4px 10px rgba(255, 145, 180, 0.5);
+            box-shadow: 2px 4px 10px rgb(255 145 180 / .5);
             transition: all 0.4s ease;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
         .produk>section>a:hover {
             background: linear-gradient(to right, #ff7fa3, #ffb6cb);
             transform: scale(1.1);
-            box-shadow: 4px 6px 15px rgba(255, 120, 170, 0.7);
+            box-shadow: 4px 6px 15px rgb(255 120 170 / .7)
         }
-
 
         .button {
             display: flex;
@@ -328,7 +320,7 @@
         .button>section {
             width: 150px;
             height: 40px;
-            background-color: white;
+            background-color: #fff;
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -345,25 +337,25 @@
             padding: 80px 50px;
             background-color: #fee7ee;
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif
         }
 
         .bc h1 {
             margin-bottom: 40px;
-            color: #e76881;
+            color: #e76881
         }
 
         .bc-container {
             display: flex;
             justify-content: center;
             gap: 30px;
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
 
         .card {
             width: 200px;
             height: 120px;
-            perspective: 1000px;
+            perspective: 1000px
         }
 
         .inner {
@@ -371,14 +363,12 @@
             height: 100%;
             position: relative;
             transition: transform 0.8s;
-            transform-style: preserve-3d;
+            transform-style: preserve-3d
         }
-
 
         .card:hover .inner {
-            transform: rotateY(180deg);
+            transform: rotateY(180deg)
         }
-
 
         .front,
         .back {
@@ -390,19 +380,17 @@
             align-items: center;
             justify-content: center;
             backface-visibility: hidden;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            font-weight: bold;
+            box-shadow: 2px 2px 10px rgb(0 0 0 / .2);
+            font-weight: 700
         }
-
 
         .front {
-            background-color: #fcedf8;
+            background-color: #fcedf8
         }
-
 
         .back {
             background-color: #ffb7c5;
-            transform: rotateY(180deg);
+            transform: rotateY(180deg)
         }
 
         footer {
@@ -412,13 +400,13 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            z-index: 2;
+            z-index: 2
         }
 
         footer>.media {
             display: flex;
             flex-direction: row;
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 30px 0 10px 50px;
             margin-bottom: 1px;
             gap: 600px
@@ -437,10 +425,8 @@
         }
     </style>
 </head>
-
 <body>
-
-    <div class="cherry-container">
+    <div class="cherry">
         <span>🍒</span>
         <span>🍒</span>
         <span>🍒</span>
@@ -450,7 +436,6 @@
         <span>🍒</span>
     </div>
     <div id="modalpromo">
-
         <div style="
             background-color: white;
             margin: 15% auto;
@@ -492,21 +477,13 @@
             <a href="aboutus/index.html" aria-label="About G2G">ABOUT US</a>
             <a href="produk/index.html" aria-label="produk">PRODUCT</a>
             <a href="service/index.html" aria-label="service">SERVICES</a>
-        
         </section>
-
     </header>
-
-
     <main>
         <section class="gambar">
             <img src="img/Pic1.jpg" alt="Glad2Glow Banner">
         </section>
-
-
         <section class="p1">
-
-
             <section class="kanan">
                 <section> </section>
             </section>
@@ -527,25 +504,21 @@
                 <li> Halal: Sebagian besar produk unggulannya juga
                     sudah mengantongi sertifikat Halal, menjadikannya aman digunakan oleh konsumen Muslim di Indonesia.
                 </li> <br><br>
-
                 <section class="button">
                     <a href="aboutus/index.html" aria-label="About G2G">Learn More >></a>
                 </section>
             </section>
         </section>
-
         <section class="kata">
             <h1>Let's Glow Together</h1>
-
         </section>
-
         <section class="produk">
             <section><img src="img/g2g.png" loading="lazy" width="200vw" height="200vh" alt="lip serum">
                 <p>Glad2Glow Lip Serum</p>
                 <a href="produk/beli-lipserum.html" aria-label="Beli Lip Serum">Buy it</a>
             </section>
             <section><img src="img/g2g1.png" loading="lazy" width="200vw" height="200vh" alt="1 set">
-                <p>Facial Wash Glad2Glow  <br>Milk Amino Acid</p>
+                <p>Facial Wash Glad2Glow <br>Milk Amino Acid</p>
                 <a href="produk/beli-facialwash.html" aria-label="Beli Facial Wash">Buy it</a>
             </section>
             <section><img src="img/g2g3.png" loading="lazy" width="200vw" height="200vh" alt="body serum">
@@ -556,62 +529,47 @@
                 <p>Glad2Glow Tone Up <br>Brightening Day Cream</p>
                 <a href="produk/beli-toneup.html" aria-label="Beli Tone Up">Buy it</a>
             </section>
-
         </section>
-
-
-
         <section class="button">
             <section>
                 <a href="produk/index.html" aria-label="produk lainnya">See More >></a>
             </section>
-
         </section>
         <section class="bc">
             <h1>✨ What’s Inside Glad2Glow?</h1>
 
             <div class="bc-container">
-
                 <div class="card">
                     <div class="inner">
                         <div class="front">🍒 Cherry Extract</div>
                         <div class="back">Brightening ✨</div>
                     </div>
                 </div>
-
                 <div class="card">
                     <div class="inner">
                         <div class="front">💧 Hyaluronic Acid</div>
                         <div class="back">Hydrating 💦</div>
                     </div>
                 </div>
-
                 <div class="card">
                     <div class="inner">
                         <div class="front">🌿 Centella</div>
                         <div class="back">Soothing 🌱</div>
                     </div>
                 </div>
-
                 <div class="card">
                     <div class="inner">
                         <div class="front">✨ Niacinamide</div>
                         <div class="back">Skin Barrier 💖</div>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
     <footer>
-
-
-
         <section class="media">
             <img src="img/logo.png" loading="lazy" width="200px" height="50px" alt="logo">
             <img src="img/media.jpg" loading="lazy" width="200px" alt="media sosial">
-
-
         </section>
         <section class="bawah">
             <p>ABOUT US | CONTACT | COMMERCIAL | NEWSLETTER | TERMS OF SERVICE |</p>
@@ -619,18 +577,12 @@
                 BSD Green Office Park, BSD City, Tangerang, Banten 15435</p>
         </section>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 <script>
-    setTimeout(() => {
-        document.getElementById("modalpromo").style.display = "block"
-    }, 5000);
-    function closePromo() {
-        document.getElementById("modalpromo").style.display = "none"
-    }
-
+    setTimeout(() => { document.getElementById("modalpromo").style.display = "block" }, 5000); function closePromo() { document.getElementById("modalpromo").style.display = "none" }
 </script>
 <script type="application/ld+json">
     {
@@ -655,5 +607,5 @@
       }
     }
     </script>
-    
+
 </html>

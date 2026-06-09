@@ -9,82 +9,69 @@
     <meta name="keywords" content="g2g, Glad2Glow, skincare, produk Glad2Glow">
     <meta name="author" content="Tugas Kelompok 5 Pemrograman Web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <style>
         body {
             min-height: 100vh;
             width: 90dvw;
             display: flex;
             flex-direction: column;
-            margin: 5px 20px 0px 70px;
-
+            margin: 5px 20px 0 70px
         }
 
         header {
             height: 100px;
-            background-color: rgb(253, 253, 253);
+            background-color: #fdfdfd;
             display: flex;
             flex-direction: row;
             position: sticky;
             top: 0;
             z-index: 999;
-            box-shadow: 0px 2px 1px rgb(192, 187, 187);
-
-
+            box-shadow: 0 2px 1px #c0bbbb
         }
 
         header>.logo {
             width: 50vw;
             height: 80px;
-            padding: 35px 0px 0px 20px;
+            padding: 35px 0 0 20px
         }
 
         header>.halaman {
             display: flex;
-            padding: 40px 10px 0px 20px;
-            gap: 20px;
-
-
-
+            padding: 40px 10px 0 20px;
+            gap: 20px
         }
 
         a {
             text-decoration: none;
-            color: rgb(95, 94, 99);
+            color: #5f5e63;
             transition: color 0.5s;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
         a:hover {
-            color: rgb(10, 10, 10);
+            color: #0a0a0a
         }
 
         main {
             width: 90dvw;
             display: flex;
             flex-direction: column;
-            background-color: #fee7ee;
-
-
+            background-color: #fee7ee
         }
 
         main>.p1 {
             padding: 20px 50px 20px 70px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            line-height: 1.5;
+            line-height: 1.5
         }
 
         main>.baris {
             display: flex;
             flex-direction: row;
             gap: 40px;
-            padding: 100px 20px 100px 80px;
-
-
+            padding: 100px 20px 100px 80px
         }
 
         main>.baris>section {
@@ -99,46 +86,36 @@
             justify-content: center;
             padding: 40px 0 40px 0;
             background-color: #fcedf8;
-            transition: transform 0.5s ease;
-
-
-
+            transition: transform 0.5s ease
         }
 
         .baris>section>p {
             text-align: center;
-            padding: 10px 10px 10px 10px;
+            padding: 10px 10px 10px 10px
         }
 
         .baris>section>a {
             text-decoration: none;
             background: linear-gradient(to right, #ff9eb5, #ffc7d7);
-            color: white;
+            color: #fff;
             padding: 10px 22px;
             border-radius: 30px;
-            font-weight: bold;
+            font-weight: 700;
             margin-top: 10px;
-            box-shadow: 2px 4px 10px rgba(255, 145, 180, 0.5);
+            box-shadow: 2px 4px 10px rgb(255 145 180 / .5);
             transition: all 0.4s ease;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
         }
 
         .baris>section>a:hover {
             background: linear-gradient(to right, #ff7fa3, #ffb6cb);
             transform: scale(1.1);
-            box-shadow: 4px 6px 15px rgba(255, 120, 170, 0.7);
+            box-shadow: 4px 6px 15px rgb(255 120 170 / .7)
         }
 
         .iklan {
-            padding-top: 50px;
+            padding-top: 50px
         }
-
-
-
-
-
-
-
 
         footer {
             width: 90dvw;
@@ -151,7 +128,7 @@
         footer>.media {
             display: flex;
             flex-direction: row;
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 30px 0 10px 50px;
             margin-bottom: 1px;
             gap: 600px
@@ -186,9 +163,7 @@
     <main>
         <section>
             <img src="../img/bg2.png" class="d-block w-100" alt="background produk 2">
-
         </section>
-
         <section class="p1">
             <h1>Produk</h1>
             <p>Dapatkan Kulit Tampak Sehat dan Bercahaya dengan koleksi inovatif kami.
@@ -218,14 +193,10 @@
                 <p>Glad2Glow Creamy Berry <br>Overnight Bright Body Serum</p>
                 <a href="creamyberrybodyserum.html" aria-label="Beli Body Serum">Buy it</a>
             </section>
-
         </section>
-
         <section>
             <img src="../img/mostwantedproduk.png" class="d-block w-100" alt="background produk 2">
-
         </section>
-
         <section class="baris">
             <section><img src="../img/p2.png" loading="lazy" width="200vw" height="200vh" alt="produk1">
                 <p>Glad2Glow Sunscreen Gel SPF 50 PA+++</p>
@@ -247,23 +218,15 @@
                 <p>Glad2Glow Berry Peptide <br>Brightening Eye Cream</p>
                 <a href="eyecream.html" aria-label="Beli Eye Cream">Buy it</a>
             </section>
-
         </section>
         <section>
             <img src="../img/bg2.png" class="d-block w-100" alt="background produk 2">
-
         </section>
-
-
-
-
     </main>
     <footer>
         <section class="media">
             <img src="../img/logo.png" loading="lazy" width="200px" height="50px" alt="logo">
             <img src="../img/media.jpg" loading="lazy" width="200px" alt="media sosial">
-
-
         </section>
         <section class="bawah">
             <p>ABOUT US | CONTACT | COMMERCIAL | NEWSLETTER | TERMS OF SERVICE |</p>
@@ -271,7 +234,6 @@
                 BSD Green Office Park, BSD City, Tangerang, Banten 15435</p>
         </section>
     </footer>
-
     <div id="sticky-promo" style="
         position: fixed;
         top: 0;
@@ -297,26 +259,15 @@
             X
         </button>
     </div>
-
     <div style=" margin-top: 50px"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
 </body>
 <script>
-    function hideBar() {
-        document.getElementById("sticky-promo").style.top = "-60px";
-    }
-
-    setInterval(() => {
-        const bar = document.getElementById("sticky-promo");
-        bar.style.background = "red";
-        setTimeout(() => {
-            bar.style.background = "lightgreen";
-        }, 500);
-    }, 5000);
+    function hideBar() { document.getElementById("sticky-promo").style.top = "-60px" }
+    setInterval(() => { const bar = document.getElementById("sticky-promo"); bar.style.background = "red"; setTimeout(() => { bar.style.background = "lightgreen" }, 500) }, 5000)
 </script>
 
 </html>
