@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,96 +10,173 @@
     <meta name="author" content="Tugas Kelompok 5 Pemrograman Web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 
 
 
-<style>
-    body {
-        min-height: 100vh;
-        width: 90dvw;
-        display: flex;
-        flex-direction: column;
-        margin: 5px 20px 0 70px
-    }
+    <style>
+        body {
+            min-height: 100vh;
+            width: 90dvw;
+            display: flex;
+            flex-direction: column;
+            margin: 5px 20px 0 70px
+        }
 
-    header {
-        height: 100px;
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        position: sticky;
-        top: 0;
-        z-index: 999;
-        box-shadow: 0 2px 1px #c0bbbb
-    }
+        header {
+            height: 100px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 1px #c0bbbb
+        }
 
-    header>.logo {
-        width: 50vw;
-        height: 80px;
-        padding: 35px 0 0 20px
-    }
+        header>.logo {
+            width: 50vw;
+            height: 80px;
+            padding: 35px 0 0 20px
+        }
 
-    header>.halaman {
-        display: flex;
-        padding: 40px 10px 0 20px;
-        gap: 20px
-    }
+        header>.halaman {
+            display: flex;
+            padding: 40px 10px 0 20px;
+            gap: 20px
+        }
 
-    a {
-        text-decoration: none;
-        color: #5f5e63;
-        transition: color 0.5s;
-        font-family: Verdana, Geneva, Tahoma, sans-serif
-    }
+        a {
+            text-decoration: none;
+            color: #5f5e63;
+            transition: color 0.5s;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
 
-    a:hover {
-        color: #0a0a0a
-    }
+        a:hover {
+            color: #0a0a0a
+        }
 
-    main {
-        width: 90dvw;
-        display: flex;
-        flex-direction: column;
-        background-color: #ffffff
-    }
+        main {
+            width: 90dvw;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff
+        }
 
 
-    footer {
-        width: 90dvw;
-        height: 30vh;
-        background-color: #6b6a6a;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 2;
-    }
+        footer {
+            width: 90dvw;
+            height: 30vh;
+            background-color: #6b6a6a;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
 
-    footer>.media {
-        display: flex;
-        flex-direction: row;
-        background-color: #ffffff;
-        padding: 30px 0 10px 50px;
-        margin-bottom: 1px;
-        gap: 600px
-    }
+        footer>.media {
+            display: flex;
+            flex-direction: row;
+            background-color: #ffffff;
+            padding: 30px 0 10px 50px;
+            margin-bottom: 1px;
+            gap: 600px
+        }
 
-    footer>.bawah {
-        height: 50vh;
-        background-color: #fdfdfd;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 14px;
-        color: #6b6a6a;
-        padding-left: 50px;
-        display: flex;
-        flex-direction: row;
-        gap: 300px
-    }
-</style>
+        footer>.bawah {
+            height: 50vh;
+            background-color: #fdfdfd;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+            color: #6b6a6a;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 300px
+        }
+
+        .service-hero {
+            text-align: center;
+            padding: 80px 50px;
+            background: linear-gradient(to right, #ffd6e7, #fff);
+        }
+
+        .service-hero h1 {
+            font-size: 48px;
+            color: #ff6ea8;
+            margin-bottom: 20px;
+        }
+
+        .service-hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .service-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            margin-top: 15px;
+            color: #ff6ea8;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .why-us {
+            background: #fff5f8;
+            padding: 60px;
+            text-align: center;
+        }
+
+        .why-us h2 {
+            color: #ff6ea8;
+            margin-bottom: 40px;
+        }
+
+        .why-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .why-container div {
+            width: 280px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+    </style>
 </head>
+
 <body>
-   <header>
+    <header>
         <section class="logo">
             <img src="../img/logo.png" width="200px" alt="logo">
         </section>
@@ -108,27 +186,101 @@
             <a href="../produk/index.html" aria-label="produk">PRODUCT</a>
             <a href="../service/index.html" aria-label="service">SERVICES</a>
         </section>
-
     </header>
     <main>
+        <section class="service-hero">
+            <h1>Our Services</h1>
+            <p>
+                Glad2Glow hadir untuk membantu setiap pelanggan mendapatkan
+                pengalaman perawatan kulit terbaik dengan layanan yang nyaman,
+                aman, dan terpercaya.
+            </p>
+        </section>
+        <section class="service-container">
+            <div class="service-card">
+                <img src="../img/consultion.avif" alt="Konsultasi Kulit" width="200vw" height="150vh">
+                <h3>Free Skin Consultation</h3>
+                <p>
+                    Konsultasi gratis untuk membantu menentukan produk yang sesuai
+                    dengan jenis dan kebutuhan kulit Anda.
+                </p>
+            </div>
+            <div class="service-card">
+                <img src="../img/rekomen.png" alt="Rekomendasi Produk" width="200vw" height="150vh">
+                <h3>Personal Product Recommendation</h3>
+                <p>
+                    Dapatkan rekomendasi produk Glad2Glow yang paling cocok untuk
+                    mengatasi masalah kulit Anda.
+                </p>
+            </div>
+            <div class="service-card">
+                <img src="../img/delivery.avif" alt="Pengiriman" width="200vw" height="150vh">
+                <h3>Fast Delivery</h3>
+                <p>
+                    Pengiriman cepat dan aman ke seluruh Indonesia untuk memastikan
+                    produk sampai dalam kondisi terbaik.
+                </p>
+            </div>
+            <div class="service-card">
+                <img src="../img/pro.png" alt="Original Product" width="200vw" height="150vh">
+                <h3>100% Original Product</h3>
+                <p>
+                    Semua produk yang kami jual dijamin original dan telah
+                    terdaftar secara resmi.
+                </p>
+            </div>
+            <div class="service-card">
+                <img src="../img/customer.webp" alt="Customer Support" width="200vw" height="150vh">
+                <h3>Customer Support</h3>
+                <p>
+                    Tim customer service siap membantu menjawab pertanyaan dan
+                    memberikan solusi terbaik untuk pelanggan.
+                </p>
+            </div>
+            <div class="service-card">
+                <img src="../img/bbb.png" alt="Beauty Tips" width="200vw" height="150vh">
+                <h3>Beauty Tips & Education</h3>
+                <p>
+                    Dapatkan tips perawatan kulit dan edukasi kecantikan terbaru
+                    untuk menjaga kulit tetap sehat dan glowing.
+                </p>
+            </div>
+        </section>
+        <section class="why-us">
 
+            <h2>Why Choose Glad2Glow?</h2>
+
+            <div class="why-container">
+
+                <div>
+                    <h4>✨ Trusted Quality</h4>
+                    <p>Produk berkualitas dengan formula yang aman untuk digunakan sehari-hari.</p>
+                </div>
+                <div>
+                    <h4>🌿 Skin Friendly</h4>
+                    <p>Diformulasikan untuk berbagai jenis kulit termasuk kulit sensitif.</p>
+                </div>
+                <div>
+                    <h4>💖 Customer Satisfaction</h4>
+                    <p>Kepuasan pelanggan menjadi prioritas utama kami.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
-
-
         <section class="media">
             <img src="../img/logo.png" loading="lazy" width="200px" height="50px" alt="logo">
             <img src="../img/media.jpg" loading="lazy" width="200px" alt="media sosial">
-
-
         </section>
         <section class="bawah">
             <p>ABOUT US | CONTACT | COMMERCIAL | NEWSLETTER | TERMS OF SERVICE |</p>
             <p>Gedung Green Office Park 9, Lantai 1, Wing A, Zona 1, Jalan Grand Boulevard,<br>
                 BSD Green Office Park, BSD City, Tangerang, Banten 15435</p>
         </section>
-    </footer> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
