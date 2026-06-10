@@ -134,6 +134,36 @@
             box-shadow: 0 2px 1px #c0bbbb
         }
 
+        .order {
+            width: 200px;
+            background-color: #fc0356;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-bottom: 18%;
+            animation: animasibutton alternate infinite 2s;
+
+        }
+
+        @keyframes animasibutton {
+            0% {
+                background-color: #e76881;
+            }
+
+            50% {
+                background-color: #fc0606;
+            }
+
+            75% {
+                background-color: #11ee0a;
+            }
+
+            100% {
+                background-color: #000;
+            }
+        }
+
         header>.logo {
             width: 50vw;
             height: 80px;
@@ -165,13 +195,14 @@
         }
 
         .gambar {
+            background-image: url(img/Pic1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 90dvw;
             height: 120dvh
-        }
-
-        .gambar img {
-            width: 100%;
-            height: 100%
         }
 
         main>.p1 {
@@ -393,6 +424,39 @@
             transform: rotateY(180deg)
         }
 
+        .wa-chat {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            background: #fa2e61;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+            z-index: 9999;
+            transition: .3s;
+        }
+
+        .wa-chat:hover {
+            transform: translateY(-3px);
+            background: #0c0c0c;
+            color: white;
+        }
+
+        .wa-chat img {
+            width: 30px;
+        }
+
+        .wa-chat span {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
         footer {
             width: 90dvw;
             height: 30vh;
@@ -425,6 +489,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="cherry">
         <span>🍒</span>
@@ -468,6 +533,10 @@
             </button>
         </div>
     </div>
+    <a href="https://wa.me/6281234567890" class="wa-chat" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="">
+        <span>Chat Beauty Consultant</span>
+    </a>
     <header>
         <section class="logo">
             <img src="img/logo.png" width="200px" alt="logo">
@@ -480,9 +549,8 @@
         </section>
     </header>
     <main>
-        <section class="gambar">
-            <img src="img/Pic1.jpg" alt="Glad2Glow Banner">
-        </section>
+        <section class="gambar"><button class="order" onclick="window.location.href='produk/index.html'">Order
+                Now</button></section>
         <section class="p1">
             <section class="kanan">
                 <section> </section>
