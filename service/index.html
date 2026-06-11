@@ -49,7 +49,7 @@
 
         a {
             text-decoration: none;
-            color: #5f5e63;
+            color: grey;
             transition: color 0.5s;
             font-family: Verdana, Geneva, Tahoma, sans-serif
         }
@@ -59,25 +59,26 @@
         }
 
         main {
-            width: 90dvw;
+            width: 70dvw;
             display: flex;
             flex-direction: column;
             background-color: #ffffff
         }
 
         .service-hero {
-            height: 60vh;
-            padding: 80px 50px;
-            background-color: #ffcee3;
-            background-position: right;
-            background-image: url(../img/org.jpg);
+            height: 78vh;
+            width: 90dvw;
+            background-color: pink;
+            background-position: left;
+            background-image: url(../img/colorbloom.jpg);
             background-repeat: no-repeat;
+            
             
         }
 
         .service-hero h1 {
             font-size: 48px;
-            color: #ff6ea8;
+            color: pink;
             margin: 10px 10px 20px 220px;
         }
 
@@ -90,12 +91,15 @@
 
         .service-container {
             display: grid;
+            width: 90dvw;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             padding: 60px;
         }
 
         .service-card {
+            width: 20vw;
+            height: 50vh;
             background: rgb(253, 235, 235);
             border-radius: 20px;
             padding: 30px;
@@ -227,12 +231,7 @@
     </header>
     <main>
         <section class="service-hero">
-            <h1><b>Our Services</b></h1>
-            <p>
-                Glad2Glow hadir untuk membantu setiap pelanggan mendapatkan
-                pengalaman perawatan kulit terbaik dengan layanan yang nyaman,
-                aman, dan terpercaya.
-            </p>
+            
         </section>
         <section class="service-container">
             <div class="service-card">
