@@ -5,16 +5,12 @@
     <meta charset="UTF-8">
     <title>Service</title>
     <meta name="description" content="Service Skincare Glad2Glow">
-    <meta name="keywords" content= "service Glad2Glow">
+    <meta name="keywords" content="service Glad2Glow">
     <meta name="author" content="Tugas Kelompok 5 Pemrograman Web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-
-
-
     <style>
         body {
             min-height: 100vh;
@@ -26,7 +22,7 @@
 
         header {
             height: 100px;
-            background-color: white;
+            background-color: #fff;
             display: flex;
             flex-direction: row;
             position: sticky;
@@ -62,31 +58,29 @@
             width: 70dvw;
             display: flex;
             flex-direction: column;
-            background-color: #ffffff
+            background-color: #fff
         }
 
         .service-hero {
             height: 78vh;
             width: 90dvw;
             background-color: pink;
-            background-position: left;
-            background-image: url(../img/colorbloom.jpg);
+            background-image: url(../img/colorbloom.png);
             background-repeat: no-repeat;
-            
-            
+            background-size: cover
         }
 
         .service-hero h1 {
             font-size: 48px;
             color: pink;
-            margin: 10px 10px 20px 220px;
+            margin: 10px 10px 20px 220px
         }
 
         .service-hero p {
             max-width: 700px;
             color: #080808;
             line-height: 1.8;
-            text-align: center;
+            text-align: center
         }
 
         .service-container {
@@ -94,58 +88,59 @@
             width: 90dvw;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
-            padding: 60px;
+            padding: 60px
         }
 
         .service-card {
             width: 20vw;
             height: 50vh;
-            background: rgb(253, 235, 235);
+            background: #fdebeb;
             border-radius: 20px;
             padding: 30px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: 0.3s;
+            box-shadow: 0 5px 15px rgb(0 0 0 / .1);
+            transition: 0.3s
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-10px)
         }
 
         .service-card h3 {
             margin-top: 15px;
-            color: #ff6ea8;
+            color: #ff6ea8
         }
 
         .service-card p {
             color: #666;
-            line-height: 1.6;
+            line-height: 1.6
         }
 
         .why-us {
+            width: 90dvw;
             background: #ffeaf0;
             padding: 60px;
-            text-align: center;
+            text-align: center
         }
 
         .why-us h2 {
             color: #ff6ea8;
-            margin-bottom: 40px;
+            margin-bottom: 40px
         }
 
         .why-container {
             display: flex;
             justify-content: center;
             gap: 40px;
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
 
         .why-container div {
             width: 280px;
-            background: white;
+            background: #fff;
             padding: 25px;
             border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 12px rgb(0 0 0 / .08)
         }
 
         .wa-chat {
@@ -153,32 +148,32 @@
             right: 25px;
             bottom: 25px;
             background: #fa2e61;
-            color: white;
+            color: #fff;
             text-decoration: none;
             padding: 12px 18px;
             border-radius: 50px;
             display: flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+            box-shadow: 0 5px 15px rgb(0 0 0 / .2);
             z-index: 9999;
-            transition: .3s;
+            transition: .3s
         }
 
         .wa-chat:hover {
             transform: translateY(-3px);
             background: #0c0c0c;
-            color: white;
+            color: #fff
         }
 
         .wa-chat img {
-            width: 30px;
+            width: 30px
         }
 
         .wa-chat span {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 700
         }
 
         footer {
@@ -188,13 +183,13 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            z-index: 2;
+            z-index: 2
         }
 
         footer>.media {
             display: flex;
             flex-direction: row;
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 30px 0 10px 50px;
             margin-bottom: 1px;
             gap: 600px
@@ -213,6 +208,7 @@
         }
     </style>
 </head>
+
 <body>
     <a href="https://wa.me/6281234567890" class="wa-chat" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="">
@@ -231,7 +227,7 @@
     </header>
     <main>
         <section class="service-hero">
-            
+
         </section>
         <section class="service-container">
             <div class="service-card">
