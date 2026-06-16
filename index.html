@@ -538,7 +538,7 @@
     </a>
     <header>
         <section class="logo">
-            <img src="img/logo.png" width="200px" alt="logo">
+            <img src="img/logo.png" loading="lazy" width="200px" alt="logo">
         </section>
         <section class="halaman">
             <a href="index.html" aria-label="halaman utama">HOME</a>
@@ -647,11 +647,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-</body>
-<script>
-    setTimeout(() => { document.getElementById("modalpromo").style.display = "block" }, 5000); function closePromo() { document.getElementById("modalpromo").style.display = "none" }
-</script>
-<script type="application/ld+json">
+    <script>
+        setTimeout(() => { document.getElementById("modalpromo").style.display = "block" }, 5000); function closePromo() { document.getElementById("modalpromo").style.display = "none" }
+        window.addEventListener("load", () => {
+            document.querySelector(".cherry")
+                .classList.add("active");
+        });
+    </script>
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
@@ -674,5 +677,7 @@
       }
     }
     </script>
+
+</body>
 
 </html>
