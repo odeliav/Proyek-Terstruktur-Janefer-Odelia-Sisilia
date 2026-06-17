@@ -63,7 +63,6 @@
             display: flex;
             flex-direction: row;
             background-color: #e9efff
-            /* tulisan kanan */
         }
 
         .p1>.about {
@@ -88,7 +87,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: white
+            background-color: #fff
         }
 
         .p1>.kanan>section {
@@ -97,7 +96,6 @@
             height: 90dvh;
             border-radius: 20px;
             background-image: url(../img/g2gblub.jpg);
-            /* GAMBAR UTAMA */
             background-size: contain;
             background-repeat: no-repeat;
             transform: translateX(20px)
@@ -181,26 +179,26 @@
             right: 25px;
             bottom: 25px;
             background: #fa2e61;
-            color: white;
+            color: #fff;
             text-decoration: none;
             padding: 12px 18px;
             border-radius: 50px;
             display: flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+            box-shadow: 0 5px 15px rgb(0 0 0 / .2);
             z-index: 9999;
-            transition: .3s;
+            transition: .3s
         }
 
         .wa-chat:hover {
             transform: translateY(-3px);
             background: #0c0c0c;
-            color: white;
+            color: #fff
         }
 
         .wa-chat img {
-            width: 30px;
+            width: 30px
         }
 
         footer {
@@ -235,21 +233,23 @@
         }
     </style>
 </head>
+
 <body>
-    <a href="https://wa.me/6281234567890" class="wa-chat" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="">
+    <a href="https://wa.me/6281234567890" class="wa-chat" target="_blank"
+        aria-label="Chat dengan Beauty Consultant melalui WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" aria-hidden="true">
         <span>Chat Beauty Consultant</span>
     </a>
     <header>
-        <section class="logo">
+        <nav class="logo">
             <img src="../img/logo.png" loading="lazy" width="200px" alt="logo">
-        </section>
-        <section class="halaman">
+        </nav>
+        <nav class="halaman">
             <a href="../index.html" aria-label="halaman utama">HOME</a>
             <a href="../aboutus/index.html" aria-label="About G2G">ABOUT US</a>
             <a href="../produk/index.html" aria-label="produk">PRODUCT</a>
             <a href="../service/index.html" aria-label="service">SERVICES</a>
-        </section>
+        </nav>
     </header>
     <main>
         <section class="p1">
@@ -258,11 +258,13 @@
             </section>
             <section class="about">
                 <h2>Glad2Glow Blueberry 5% Ceramide</h2>
-                <p>Gel pembersih wajah dengan pH rendah, efektif membersihkan wajah tanpa mengeringkan kulit, bagus untuk kulit berjerawat dan sensitif.</p>
+                <p>Gel pembersih wajah dengan pH rendah, efektif membersihkan wajah tanpa mengeringkan kulit, bagus
+                    untuk kulit berjerawat dan sensitif.</p>
                 <br>
                 <h3>G2G Blueberry 5% Ceramide Low pH Cleanser</h3>
                 <li> Membersihkan wajah dengan lembut dari kotoran, minyak berlebih, dan sisa makeup. </li>
-                <li> Cocok untuk kulit berjerawat, karena memiliki pH rendah (low pH) yang lebih ramah untuk kulit dan tidak terlalu "mengikis" minyak alami wajah.
+                <li> Cocok untuk kulit berjerawat, karena memiliki pH rendah (low pH) yang lebih ramah untuk kulit dan
+                    tidak terlalu "mengikis" minyak alami wajah.
                 </li> <br><br>
             </section>
         </section>
@@ -276,9 +278,9 @@
                 <article class="card pink">
                     <h2>01</h2>
                     <hr>
-                    <h3>PEMBERSIH WAJAH</h3>
+                    <h3>PENGHAPUS MAKE UP</h3>
 
-                    <img src="../img/g2gblubmicell.jpg" loading="lazy" alt="Facial Wash">
+                    <img src="../img/g2gblubmicell.jpg" loading="lazy" alt="micellarwater">
 
                     <p>
                         Membersihkan debu, minyak berlebih, dan sisa makeup secara lembut
@@ -288,13 +290,13 @@
                 <article class="card white">
                     <h2>02</h2>
                     <hr>
-                    <h3>PELEMBAP WAJAH</h3>
+                    <h3>PEMBERSIH WAJAH</h3>
 
-                    <img src="../img/g2gblub.jpg" loading="lazy" alt="Moisturizer">
+                    <img src="../img/g2gblub.jpg" loading="lazy" alt="Facial Wash">
 
                     <p>
-                        Membantu menjaga kelembapan kulit sepanjang hari dan memperkuat
-                        skin barrier.
+                        Mengangkat kotoran dan minyak tanpa
+                        menghilangkan kelembapan alami kulit.
                     </p>
                 </article>
                 <article class="card pink">
@@ -302,7 +304,7 @@
                     <hr>
                     <h3>PERAWATAN JERAWAT</h3>
 
-                    <img src="../img/g2gblubtoner.jpg" loading="lazy" alt="Acne Care">
+                    <img src="../img/g2gblubtoner.jpg" loading="lazy" alt="toner">
 
                     <p>
                         Membantu mengurangi kemerahan, mengontrol minyak berlebih,
